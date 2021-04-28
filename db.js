@@ -2,7 +2,7 @@ let faker = require('faker');
 
 function generateProducts() {
     let products = [];
-    for (let index = 1; index <= 10000; index++) {
+    for (let index = 1; index <= 100; index++) {
       let name = faker.vehicle.vehicle();
       let price = faker.random.number({min: 1, max: 5}) * 1000000
       let quantity = faker.random.number({min: 1, max: 9}) * 100
