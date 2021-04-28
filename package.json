@@ -4,7 +4,7 @@
   "description": "fake server with fake database",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "concurrently \"node server.js\"  \"json-server --watch db.js\" "
   },
   "author": "MAMADOU LAMARANA DIALLO",
   "license": "ISC",
